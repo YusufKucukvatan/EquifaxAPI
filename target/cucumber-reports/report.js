@@ -14,19 +14,12 @@ formatter.background({
   "description": "",
   "keyword": "Background"
 });
-formatter.step({
-  "name": "baseURI is set",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.equifax.stepDefinitions.ApiStepDefinitions.setup()"
-});
-formatter.result({
+formatter.before({
   "status": "passed"
 });
 formatter.step({
   "name": "accept type is \"application/json\"",
-  "keyword": "And "
+  "keyword": "Given "
 });
 formatter.match({
   "location": "com.equifax.stepDefinitions.ApiStepDefinitions.accept_type_is(java.lang.String)"
@@ -179,19 +172,12 @@ formatter.background({
   "description": "",
   "keyword": "Background"
 });
-formatter.step({
-  "name": "baseURI is set",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.equifax.stepDefinitions.ApiStepDefinitions.setup()"
-});
-formatter.result({
+formatter.before({
   "status": "passed"
 });
 formatter.step({
   "name": "accept type is \"application/json\"",
-  "keyword": "And "
+  "keyword": "Given "
 });
 formatter.match({
   "location": "com.equifax.stepDefinitions.ApiStepDefinitions.accept_type_is(java.lang.String)"
@@ -244,19 +230,12 @@ formatter.background({
   "description": "",
   "keyword": "Background"
 });
-formatter.step({
-  "name": "baseURI is set",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.equifax.stepDefinitions.ApiStepDefinitions.setup()"
-});
-formatter.result({
+formatter.before({
   "status": "passed"
 });
 formatter.step({
   "name": "accept type is \"application/json\"",
-  "keyword": "And "
+  "keyword": "Given "
 });
 formatter.match({
   "location": "com.equifax.stepDefinitions.ApiStepDefinitions.accept_type_is(java.lang.String)"

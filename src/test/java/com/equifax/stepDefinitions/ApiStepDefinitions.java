@@ -12,10 +12,9 @@ import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.Assert;
-import org.junit.jupiter.api.BeforeAll;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.*;
+
 
 public class ApiStepDefinitions implements EndPoints {
 
@@ -28,12 +27,8 @@ public class ApiStepDefinitions implements EndPoints {
     private int age;
     private String gender;
 
-    @Given("baseURI is set")
-    public void setup() {
-        RestAssured.baseURI = ConfigurationReader.get("baseURI");
-    }
 
-    @And("accept type is {string}")
+    @Given("accept type is {string}")
     public void accept_type_is(String string) {
         if(string.toLowerCase().contains("json")){
             contentType = ContentType.JSON;
