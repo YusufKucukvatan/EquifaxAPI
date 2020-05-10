@@ -7,11 +7,11 @@ import com.equifax.pojos.Customer;
 public class ApiUtils {
 
     /*
-    We can insert some utilities which is customized for DeckApi.
-    This requirement is not complex to create that kind of utility class.
-    This is created in order to reflect the generic approach.
+    I created a method which checks the response object data schema and returns a boolean.
+    I try to assign response object to a Customer(POJO) object.
+    If it has all valis data types and structure, it returns true.
+    Otherwise it jumps into catch block returns false and throws a "JsonException".
     */
-
     public static boolean isValidJson (JsonPath json){
             try {
                 Customer customer = json.getObject("", Customer.class);

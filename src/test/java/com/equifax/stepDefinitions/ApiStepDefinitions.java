@@ -13,10 +13,21 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.Assert;
 
+import java.util.concurrent.TimeUnit;
+
 import static io.restassured.RestAssured.given;
 
 
 public class ApiStepDefinitions implements EndPoints {
+
+    /*
+    - I used EndPoints Interface to store end points for this project.
+    - All test classes will implement this EndPoints interface.
+    - Each endpoint is declared as String.
+    - Since all interface properties are "public final static" by default,
+    none of the class is able to change those end points and I can call easily since these are static.
+    - I also create global variables for response and data fields as below.
+     */
 
     private Response response;
     private JsonPath json;
@@ -58,6 +69,7 @@ public class ApiStepDefinitions implements EndPoints {
         Assert.assertTrue(id>0);
     }
 
+    // I used regex in order to test if the name only includes alpha characters
     @Then("name is an String type value")
     public void name_is_an_String_type_value() {
         name = response.jsonPath().getString("name");
@@ -69,6 +81,7 @@ public class ApiStepDefinitions implements EndPoints {
         Assert.assertTrue(name.length()<10);
     }
 
+    // I used regex in order to test if the last name only includes alpha characters
     @Then("last is an String type value")
     public void last_is_an_String_type_value() {
         last = response.jsonPath().getString("last");
@@ -92,18 +105,25 @@ public class ApiStepDefinitions implements EndPoints {
         Assert.assertTrue(gender.matches("(.*[A-Za-z]*.)"));
     }
 
+    //Instead of hardcodin "F" and "M" comes from feature file
     @Then("gender is {string} or {string}")
     public void gender_is_or(String string1, String string2) {
         Assert.assertTrue(gender.equals(string1)||gender.equals(string2));
     }
 
     @Then("response time is less than {int} milliseconds")
-    public void response_time_is_less_than_milliseconds(Integer int1) {
-
-
+    public void response_time_is_less_than_milliseconds(Integer time) {
+        Assert.assertTrue(response.timeIn(TimeUnit.MILLISECONDS) < time);
     }
 
-
+    /*
+    Instead of using any external library, I follow different approach.
+    I created a POJO class with required data types in acceptance criteria.
+    Then I use response and JsonPath object and try to assign this object to Customer (POJO) object.
+    If the response has a valid/proper data schema/structure, it will return true
+    If it fails to assign response to my POJO, in this case it returns false.
+    Please see also ApiUtils class.
+     */
     @Then("validate the data schema is proper")
     public void validate_the_data_schema_is_proper() {
         json = given()
