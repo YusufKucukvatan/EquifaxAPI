@@ -3,7 +3,8 @@
 Feature: Equifax API Test
 
   Background:
-    Given accept type is "application/json"
+    Given baseURI is set
+    And accept type is "application/json"
     When user sends GET request
     Then verify that response status code is 200
 
