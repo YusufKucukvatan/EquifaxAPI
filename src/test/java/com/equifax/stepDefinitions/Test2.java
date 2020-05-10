@@ -1,4 +1,4 @@
-package com.equifax.tests;
+package com.equifax.stepDefinitions;
 
 
 import com.equifax.utilities.ApiUtils;
