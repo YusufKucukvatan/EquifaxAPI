@@ -1,5 +1,9 @@
-package tests;
+package com.equifax.tests;
 
+
+import com.equifax.utilities.ApiUtils;
+import com.equifax.utilities.ConfigurationReader;
+import com.equifax.utilities.EndPoints;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
@@ -7,9 +11,6 @@ import org.junit.Assert;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import utilities.ApiUtils;
-import utilities.ConfigurationReader;
-import utilities.EndPoints;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
@@ -19,7 +20,7 @@ I use Rest Assured library and Hamcrest Matchers
 I imported RestAssured and hamcrest.Matchers static properties in order to use them directly in my tests.
  */
 
-public class Test1 implements EndPoints{
+public class Test2 implements EndPoints {
 
     // I assigned baseURI which is a static member of RestAssured library.
     // It will be called before each single API call.
@@ -37,9 +38,8 @@ public class Test1 implements EndPoints{
     none of the class is able to change those end points and I can call easily since these are static.
      */
     @Test
-    @DisplayName("Verify status code")
-    public void testStatusCode(){
-
+    @DisplayName("Verify status code is 200")
+    public void testStatusCode1(){
         given()
                 .accept(ContentType.JSON)
                 .pathParam("id", customerEndpoint)
@@ -49,18 +49,32 @@ public class Test1 implements EndPoints{
                 .then()
                 .assertThat()
                 .statusCode(200);
+    }
+
+    @Test
+    @DisplayName("Verify status code is 404 with wrong end point")
+    public void testStatusCode2(){
+        given()
+                .accept(ContentType.JSON)
+                .pathParam("id", "z")
+                .when()
+                .get("customer/{id}")
+                .prettyPeek()
+                .then()
+                .assertThat()
+                .statusCode(404);
 
     }
 
 
     /*
     - I used different hamcrest verification methods in this test.
-    - gretaerThan / lessThan / oneOf methods are very useful methods.
     - "name.size()" returns the length of a string. So I don't need to extract value and use name.length() method.
-    - oneOf method is also very handy. I don't have to use "and/or" logic for this kind of requirements.
+    - allOf and matchesPattern uses regex in order to check if name contains only alpha characters
+    - greaterThan / lessThan / oneOf methods are very useful methods. I use them to verify id, age and gender requirements.
      */
     @Test
-    @DisplayName("Verify response body values")
+    @DisplayName("Verify response body")
     public void testBody(){
 
         given()
@@ -73,14 +87,15 @@ public class Test1 implements EndPoints{
                 .assertThat()
                 .body("id",greaterThan(0))
                 .body("name.size()", lessThan(10))
-                .body("name", matchesPattern("[A-z]"))
+                .body("name", allOf(matchesPattern("(.*[A-Za-z]*.)")))
                 .body("last.size()", lessThan(10))
-                .body("last", matchesPattern("[A-z]"))
+                .body("last", allOf(matchesPattern("(.*[A-Za-z]*.)")))
                 .body("age", is(greaterThan(0)))
                 .body("age", is(lessThan(120)))
                 .body("gender", is(oneOf("F","M")))
                 ;
     }
+
 
     @Test
     @DisplayName("Verify response time")
@@ -111,7 +126,6 @@ public class Test1 implements EndPoints{
     @Test
     @DisplayName("Template POJO validation")
     public void testPOJO(){
-
         JsonPath json = given()
                 .accept(ContentType.JSON)
                 .pathParam("id", customerEndpoint)
@@ -121,5 +135,4 @@ public class Test1 implements EndPoints{
         boolean isValid = ApiUtils.isValidJson(json);
         Assert.assertTrue(isValid);
     }
-
 }

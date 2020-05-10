@@ -1,8 +1,8 @@
-package utilities;
+package com.equifax.utilities;
 
 import groovy.json.JsonException;
 import io.restassured.path.json.JsonPath;
-import pojos.Customer;
+import com.equifax.pojos.Customer;
 
 public class ApiUtils {
 
@@ -14,9 +14,8 @@ public class ApiUtils {
 
     public static boolean isValidJson (JsonPath json){
             try {
-                boolean amount = json.getMap("").size() == 5;
                 Customer customer = json.getObject("", Customer.class);
-                return amount;
+                return true;
             } catch(JsonException e) {
                 return false;
             }

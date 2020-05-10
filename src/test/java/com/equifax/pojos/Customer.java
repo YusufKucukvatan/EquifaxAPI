@@ -1,14 +1,10 @@
-package pojos;
+package com.equifax.pojos;
 
-import com.google.gson.annotations.SerializedName;
 
 public class Customer {
 
-    // if you don't use exactly same name as json, you have to specify by using @SerializedName("id") annotation
-    // So, we tell Rest-Assured that I typed 'customer_id' but you will search for 'id' in the json
-    @SerializedName("id")
-    private int customer_id;
-    private String name; //==> in this cae we don't have to use @SerializedName as we use same name as json
+    private int id;
+    private String name;
     private String last;
     private int age;
     private String gender;
@@ -25,8 +21,8 @@ public class Customer {
         this.x = x;
     }
 
-    public int getCustomer_id() {
-        return customer_id;
+    public int getId() {
+        return id;
     }
 
     //I didn't use setter for id. Because it will be unique and auto-generated.
@@ -66,7 +62,7 @@ public class Customer {
     @Override
     public String toString() {
         return "Customer{" +
-                "customer_id=" + customer_id +
+                "customer_id=" + id +
                 ", name='" + name + '\'' +
                 ", last='" + last + '\'' +
                 ", age=" + age +

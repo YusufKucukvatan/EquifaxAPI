@@ -1,4 +1,4 @@
-package utilities;
+package com.equifax.utilities;
 
 public interface EndPoints {
     String customerEndpoint = "a";

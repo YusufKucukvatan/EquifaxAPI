@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ddf9719-d960-47de-a2ef-425703cd4fc7" name="Default Changelist" comment="" />
+    <list default="true" id="6ddf9719-d960-47de-a2ef-425703cd4fc7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/equifax/pojos/CustomerValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pojos/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/equifax/pojos/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/equifax/tests/Test2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/ApiUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/equifax/utilities/ApiUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/ConfigurationReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/equifax/utilities/ConfigurationReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/EndPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/equifax/utilities/EndPoints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Test1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ApiUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ConfigurationReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/EndPoints.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +29,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -22,6 +40,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1bgKg09Fciy81XSRavD85Y3mVCe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -29,6 +48,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/utilities" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -36,98 +56,107 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tests" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/java/utilities" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Test1.testBody">
-    <configuration name="Test1.creatDeck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Test2.testStatusCode2">
+    <configuration name="Test2.testPOJO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EquifaxAPI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="com.equifax.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Test1" />
-      <option name="METHOD_NAME" value="creatDeck" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test1.testBody" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="EquifaxAPI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Test1" />
-      <option name="METHOD_NAME" value="testBody" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test1.testPOJO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="EquifaxAPI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Test1" />
+      <option name="PACKAGE_NAME" value="com.equifax.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.equifax.tests.Test2" />
       <option name="METHOD_NAME" value="testPOJO" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test1.testResponseTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test2.testStatusCode2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EquifaxAPI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="com.equifax.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Test1" />
-      <option name="METHOD_NAME" value="testResponseTime" />
+      <option name="PACKAGE_NAME" value="com.equifax.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.equifax.tests.Test2" />
+      <option name="METHOD_NAME" value="testStatusCode2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test1.testStatusCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test1.testBody" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EquifaxAPI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="com.equifax.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Test1" />
+      <option name="PACKAGE_NAME" value="com.equifax.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.equifax.tests.Test1" />
+      <option name="METHOD_NAME" value="testBody" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test1.testPOJO" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="EquifaxAPI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.equifax.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.equifax.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.equifax.tests.Test1" />
+      <option name="METHOD_NAME" value="testPOJO" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test1.testStatusCode" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="EquifaxAPI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.equifax.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.equifax.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.equifax.tests.Test1" />
       <option name="METHOD_NAME" value="testStatusCode" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Test1.testBody" />
-        <item itemvalue="JUnit.Test1.testPOJO" />
-        <item itemvalue="JUnit.Test1.testResponseTime" />
-        <item itemvalue="JUnit.Test1.testStatusCode" />
-        <item itemvalue="JUnit.Test1.creatDeck" />
+        <item itemvalue="JUnit.Test2.testStatusCode2" />
+        <item itemvalue="JUnit.Test2.testPOJO" />
+        <item itemvalue="TestNG.Test1.testPOJO" />
+        <item itemvalue="TestNG.Test1.testBody" />
+        <item itemvalue="TestNG.Test1.testStatusCode" />
       </list>
     </recent_temporary>
   </component>
@@ -149,36 +178,48 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="319" y="93" key="#Project_Structure/1440.-293.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1589049084059" />
-    <state x="473" y="115" key="#com.intellij.ide.util.MemberChooser" timestamp="1589072807965">
-      <screen x="0" y="23" width="1280" height="712" />
+    <state x="532" y="158" key="#com.intellij.ide.util.MemberChooser" timestamp="1589132057843">
+      <screen x="0" y="23" width="1440" height="812" />
     </state>
     <state x="473" y="115" key="#com.intellij.ide.util.MemberChooser/0.23.1280.712@0.23.1280.712" timestamp="1589072807965" />
-    <state x="532" y="158" key="#com.intellij.ide.util.MemberChooser/1440.-270.1920.1057/0.23.1440.812@0.23.1440.812" timestamp="1589059150112" />
+    <state x="532" y="158" key="#com.intellij.ide.util.MemberChooser/1440.-270.1920.1057/0.23.1440.812@0.23.1440.812" timestamp="1589132057843" />
     <state x="532" y="169" key="#com.intellij.ide.util.MemberChooser/1440.-270.1920.992/0.23.1440.877@0.23.1440.877" timestamp="1589062516982" />
     <state x="532" y="150" key="#com.intellij.ide.util.MemberChooser/1440.-293.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1589050502886" />
-    <state width="1232" height="220" key="GridCell.Tab.0.bottom" timestamp="1589078309857">
-      <screen x="0" y="23" width="1280" height="712" />
+    <state x="539" y="359" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1589130569848">
+      <screen x="0" y="23" width="1440" height="812" />
     </state>
-    <state width="1232" height="220" key="GridCell.Tab.0.bottom/0.23.1280.712@0.23.1280.712" timestamp="1589078309857" />
-    <state width="1392" height="203" key="GridCell.Tab.0.bottom/1440.-270.1920.1057/0.23.1440.812@0.23.1440.812" timestamp="1589059790732" />
+    <state x="539" y="359" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/1440.-270.1920.1057/0.23.1440.812@0.23.1440.812" timestamp="1589130569848" />
+    <state width="1392" height="128" key="GridCell.Tab.0.bottom" timestamp="1589132882763">
+      <screen x="0" y="23" width="1440" height="812" />
+    </state>
+    <state width="1232" height="129" key="GridCell.Tab.0.bottom/0.23.1280.712@0.23.1280.712" timestamp="1589081398588" />
+    <state width="1392" height="128" key="GridCell.Tab.0.bottom/1440.-270.1920.1057/0.23.1440.812@0.23.1440.812" timestamp="1589132882763" />
     <state width="1392" height="271" key="GridCell.Tab.0.bottom/1440.-270.1920.992/0.23.1440.877@0.23.1440.877" timestamp="1589063836690" />
-    <state width="1232" height="220" key="GridCell.Tab.0.center" timestamp="1589078309856">
-      <screen x="0" y="23" width="1280" height="712" />
+    <state width="1392" height="128" key="GridCell.Tab.0.center" timestamp="1589132882762">
+      <screen x="0" y="23" width="1440" height="812" />
     </state>
-    <state width="1232" height="220" key="GridCell.Tab.0.center/0.23.1280.712@0.23.1280.712" timestamp="1589078309856" />
-    <state width="1392" height="203" key="GridCell.Tab.0.center/1440.-270.1920.1057/0.23.1440.812@0.23.1440.812" timestamp="1589059790731" />
+    <state width="1232" height="129" key="GridCell.Tab.0.center/0.23.1280.712@0.23.1280.712" timestamp="1589081398587" />
+    <state width="1392" height="128" key="GridCell.Tab.0.center/1440.-270.1920.1057/0.23.1440.812@0.23.1440.812" timestamp="1589132882762" />
     <state width="1392" height="271" key="GridCell.Tab.0.center/1440.-270.1920.992/0.23.1440.877@0.23.1440.877" timestamp="1589063836688" />
-    <state width="1232" height="220" key="GridCell.Tab.0.left" timestamp="1589078309856">
-      <screen x="0" y="23" width="1280" height="712" />
+    <state width="1392" height="128" key="GridCell.Tab.0.left" timestamp="1589132882762">
+      <screen x="0" y="23" width="1440" height="812" />
     </state>
-    <state width="1232" height="220" key="GridCell.Tab.0.left/0.23.1280.712@0.23.1280.712" timestamp="1589078309856" />
-    <state width="1392" height="203" key="GridCell.Tab.0.left/1440.-270.1920.1057/0.23.1440.812@0.23.1440.812" timestamp="1589059790730" />
+    <state width="1232" height="129" key="GridCell.Tab.0.left/0.23.1280.712@0.23.1280.712" timestamp="1589081398586" />
+    <state width="1392" height="128" key="GridCell.Tab.0.left/1440.-270.1920.1057/0.23.1440.812@0.23.1440.812" timestamp="1589132882762" />
     <state width="1392" height="271" key="GridCell.Tab.0.left/1440.-270.1920.992/0.23.1440.877@0.23.1440.877" timestamp="1589063836688" />
-    <state width="1232" height="220" key="GridCell.Tab.0.right" timestamp="1589078309857">
+    <state width="1392" height="128" key="GridCell.Tab.0.right" timestamp="1589132882763">
+      <screen x="0" y="23" width="1440" height="812" />
+    </state>
+    <state width="1232" height="129" key="GridCell.Tab.0.right/0.23.1280.712@0.23.1280.712" timestamp="1589081398588" />
+    <state width="1392" height="128" key="GridCell.Tab.0.right/1440.-270.1920.1057/0.23.1440.812@0.23.1440.812" timestamp="1589132882763" />
+    <state width="1392" height="271" key="GridCell.Tab.0.right/1440.-270.1920.992/0.23.1440.877@0.23.1440.877" timestamp="1589063836689" />
+    <state x="334" y="210" key="com.intellij.ide.util.TipDialog" timestamp="1589124755263">
+      <screen x="0" y="23" width="1440" height="812" />
+    </state>
+    <state x="334" y="210" key="com.intellij.ide.util.TipDialog/1440.-270.1920.1057/0.23.1440.812@0.23.1440.812" timestamp="1589124755263" />
+    <state x="303" y="56" width="672" height="678" key="search.everywhere.popup" timestamp="1589080782737">
       <screen x="0" y="23" width="1280" height="712" />
     </state>
-    <state width="1232" height="220" key="GridCell.Tab.0.right/0.23.1280.712@0.23.1280.712" timestamp="1589078309857" />
-    <state width="1392" height="203" key="GridCell.Tab.0.right/1440.-270.1920.1057/0.23.1440.812@0.23.1440.812" timestamp="1589059790731" />
-    <state width="1392" height="271" key="GridCell.Tab.0.right/1440.-270.1920.992/0.23.1440.877@0.23.1440.877" timestamp="1589063836689" />
+    <state x="303" y="56" width="672" height="678" key="search.everywhere.popup/0.23.1280.712@0.23.1280.712" timestamp="1589080782737" />
   </component>
 </project>
