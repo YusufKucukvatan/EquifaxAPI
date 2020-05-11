@@ -6,9 +6,9 @@ import org.junit.runner.RunWith;
 
 
 /*
-- I used Cucumber in order to run test scenarios with the help of JUnit.
-- I also added Cucumber reports which you can see the reports through the link below
-- http://localhost:63342/EquifaxAPI/target/cucumber-html-reports/overview-features.html?_ijt=o0sh8rh5doijdksfkargbkhgqh
+- Cucumber is used in order to run test scenarios with the help of JUnit.
+- Cucumber reports are also added to generate HTML reports
+- FailedRunner class is created for failed scenarios
  */
 
 @RunWith(Cucumber.class)
@@ -18,6 +18,7 @@ import org.junit.runner.RunWith;
         plugin = {
                 "json:target/cucumber.json",
                 "html:target/cucumber-reports",
+                "rerun:target/rerun.txt",
                 "pretty"
         },
         monochrome = true,

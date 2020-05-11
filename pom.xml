@@ -8,8 +8,8 @@
     <artifactId>EquifaxAPI</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
-        <maven.compiler.source>9</maven.compiler.source>
-        <maven.compiler.target>9</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
     <dependencies>
         <dependency>
@@ -54,10 +54,15 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M3</version>
                 <configuration>
-                    <source>9</source>
-                    <target>9</target>
+                    <runOrder>Alphabetical</runOrder>
+                    <includes>
+                        <include>**/CucumberRunner.java</include>
+                        <include>**/FailedRunner.java</include>
+                    </includes>
+                    <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
             <plugin>

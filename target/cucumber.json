@@ -1,9 +1,9 @@
 [
   {
-    "line": 7,
+    "line": 6,
     "elements": [
       {
-        "line": 9,
+        "line": 8,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,10 +11,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1522000,
+              "duration": 1641000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "accept type is \"application/json\"",
             "match": {
               "arguments": [
@@ -29,22 +29,44 @@
           },
           {
             "result": {
-              "duration": 1080917000,
+              "duration": 1188850000,
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "user sends GET request",
             "match": {
               "location": "com.equifax.stepDefinitions.ApiStepDefinitions.user_sends_GET_request()"
             },
             "keyword": "When "
-          },
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-11T01:02:53.347Z",
+        "before": [
           {
             "result": {
-              "duration": 23905000,
+              "duration": 335269000,
               "status": "passed"
             },
-            "line": 12,
+            "match": {
+              "location": "com.equifax.stepDefinitions.Hooks.setupAPI()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Verify that status code is 200",
+        "description": "",
+        "id": "equifax-api-test;verify-that-status-code-is-200",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 27203000,
+              "status": "passed"
+            },
+            "line": 13,
             "name": "verify that response status code is 200",
             "match": {
               "arguments": [
@@ -57,14 +79,58 @@
             },
             "keyword": "Then "
           }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
         ]
       },
       {
-        "start_timestamp": "2020-05-10T20:33:47.268Z",
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 822000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "accept type is \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"application/json\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.equifax.stepDefinitions.ApiStepDefinitions.accept_type_is(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 445521000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user sends GET request",
+            "match": {
+              "location": "com.equifax.stepDefinitions.ApiStepDefinitions.user_sends_GET_request()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-11T01:02:54.950Z",
         "before": [
           {
             "result": {
-              "duration": 345452000,
+              "duration": 47000,
               "status": "passed"
             },
             "match": {
@@ -81,71 +147,23 @@
         "steps": [
           {
             "result": {
-              "duration": 1002000,
+              "duration": 265921000,
               "status": "passed"
             },
             "line": 16,
-            "name": "accept type is \"application/json\"",
+            "name": "id is greater than zero",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"application/json\"",
-                  "offset": 15
-                }
-              ],
-              "location": "com.equifax.stepDefinitions.ApiStepDefinitions.accept_type_is(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 407007000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user sends GET request",
-            "match": {
-              "location": "com.equifax.stepDefinitions.ApiStepDefinitions.user_sends_GET_request()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1890000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "verify that response status code is 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 36
-                }
-              ],
-              "location": "com.equifax.stepDefinitions.ApiStepDefinitions.verify_that_response_status_code_is(java.lang.Integer)"
+              "location": "com.equifax.stepDefinitions.ApiStepDefinitions.id_is_greater_than_zero()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 249807000,
+              "duration": 10329000,
               "status": "passed"
             },
-            "line": 19,
-            "name": "id is greater than zero",
-            "match": {
-              "location": "com.equifax.stepDefinitions.ApiStepDefinitions.id_is_greater_than_zero()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 10260000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "name is an String type value",
+            "line": 17,
+            "name": "name is an String type value not longer than 10 alpha characters",
             "match": {
               "location": "com.equifax.stepDefinitions.ApiStepDefinitions.name_is_an_String_type_value()"
             },
@@ -153,29 +171,11 @@
           },
           {
             "result": {
-              "duration": 392000,
+              "duration": 7843000,
               "status": "passed"
             },
-            "line": 21,
-            "name": "name is not longer than 10 alpha characters",
-            "match": {
-              "arguments": [
-                {
-                  "val": "10",
-                  "offset": 24
-                }
-              ],
-              "location": "com.equifax.stepDefinitions.ApiStepDefinitions.name_is_not_longer_than_alpha_characters(java.lang.Integer)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 6331000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "last is an String type value",
+            "line": 18,
+            "name": "last is an String type value not longer than 10 alpha characters",
             "match": {
               "location": "com.equifax.stepDefinitions.ApiStepDefinitions.last_is_an_String_type_value()"
             },
@@ -183,28 +183,10 @@
           },
           {
             "result": {
-              "duration": 374000,
+              "duration": 7854000,
               "status": "passed"
             },
-            "line": 23,
-            "name": "last is not longer than 10 alpha characters",
-            "match": {
-              "arguments": [
-                {
-                  "val": "10",
-                  "offset": 24
-                }
-              ],
-              "location": "com.equifax.stepDefinitions.ApiStepDefinitions.last_is_not_longer_than_alpha_characters(java.lang.Integer)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7083000,
-              "status": "passed"
-            },
-            "line": 24,
+            "line": 19,
             "name": "age is between 0 and 120",
             "match": {
               "arguments": [
@@ -223,11 +205,11 @@
           },
           {
             "result": {
-              "duration": 6926000,
+              "duration": 7550000,
               "status": "passed"
             },
-            "line": 25,
-            "name": "gender is an String type value",
+            "line": 20,
+            "name": "gender is an String type value and gender is F or M",
             "match": {
               "location": "com.equifax.stepDefinitions.ApiStepDefinitions.gender_is_an_String_type_value()"
             },
@@ -235,116 +217,10 @@
           },
           {
             "result": {
-              "duration": 474000,
+              "duration": 2676000,
               "status": "passed"
             },
-            "line": 26,
-            "name": "gender is \"F\" or \"M\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"F\"",
-                  "offset": 10
-                },
-                {
-                  "val": "\"M\"",
-                  "offset": 17
-                }
-              ],
-              "location": "com.equifax.stepDefinitions.ApiStepDefinitions.gender_is_or(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@api"
-          }
-        ]
-      },
-      {
-        "line": 9,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 290000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "accept type is \"application/json\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"application/json\"",
-                  "offset": 15
-                }
-              ],
-              "location": "com.equifax.stepDefinitions.ApiStepDefinitions.accept_type_is(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 453744000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user sends GET request",
-            "match": {
-              "location": "com.equifax.stepDefinitions.ApiStepDefinitions.user_sends_GET_request()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 774000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "verify that response status code is 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 36
-                }
-              ],
-              "location": "com.equifax.stepDefinitions.ApiStepDefinitions.verify_that_response_status_code_is(java.lang.Integer)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-05-10T20:33:49.470Z",
-        "before": [
-          {
-            "result": {
-              "duration": 35000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.equifax.stepDefinitions.Hooks.setupAPI()"
-            }
-          }
-        ],
-        "line": 28,
-        "name": "Verify response response time",
-        "description": "",
-        "id": "equifax-api-test;verify-response-response-time",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 2930000,
-              "status": "passed"
-            },
-            "line": 29,
+            "line": 21,
             "name": "response time is less than 500 milliseconds",
             "match": {
               "arguments": [
@@ -355,7 +231,7 @@
               ],
               "location": "com.equifax.stepDefinitions.ApiStepDefinitions.response_time_is_less_than_milliseconds(java.lang.Integer)"
             },
-            "keyword": "Then "
+            "keyword": "And "
           }
         ],
         "tags": [
@@ -365,7 +241,7 @@
         ]
       },
       {
-        "line": 9,
+        "line": 8,
         "name": "",
         "description": "",
         "type": "background",
@@ -373,10 +249,10 @@
         "steps": [
           {
             "result": {
-              "duration": 333000,
+              "duration": 535000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "accept type is \"application/json\"",
             "match": {
               "arguments": [
@@ -391,42 +267,24 @@
           },
           {
             "result": {
-              "duration": 509211000,
+              "duration": 410565000,
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "user sends GET request",
             "match": {
               "location": "com.equifax.stepDefinitions.ApiStepDefinitions.user_sends_GET_request()"
             },
             "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1327000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "verify that response status code is 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 36
-                }
-              ],
-              "location": "com.equifax.stepDefinitions.ApiStepDefinitions.verify_that_response_status_code_is(java.lang.Integer)"
-            },
-            "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-05-10T20:33:49.932Z",
+        "start_timestamp": "2020-05-11T01:02:55.706Z",
         "before": [
           {
             "result": {
-              "duration": 45000,
+              "duration": 44000,
               "status": "passed"
             },
             "match": {
@@ -434,7 +292,7 @@
             }
           }
         ],
-        "line": 31,
+        "line": 23,
         "name": "Verify data schema",
         "description": "",
         "id": "equifax-api-test;verify-data-schema",
@@ -443,10 +301,10 @@
         "steps": [
           {
             "result": {
-              "duration": 553981000,
+              "duration": 1590512000,
               "status": "passed"
             },
-            "line": 32,
+            "line": 24,
             "name": "validate the data schema is proper",
             "match": {
               "location": "com.equifax.stepDefinitions.ApiStepDefinitions.validate_the_data_schema_is_proper()"
@@ -471,7 +329,7 @@
         "name": "@api",
         "type": "Tag",
         "location": {
-          "line": 6,
+          "line": 5,
           "column": 1
         }
       }
